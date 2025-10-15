@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Seleksi Nilai</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var nilai = prompt("Masukkan nilai (0-100): ", 0);
+        var huruf = "";
+        var keterangan = "";
+
+        if (nilai >= 80 && nilai <= 100) {
+            huruf = "A";
+            keterangan = "Lulus";
+        } else if (nilai >= 75) {
+            huruf = "AB";
+            keterangan = "Lulus";
+        } else if (nilai >= 70) {
+            huruf = "B";
+            keterangan = "Lulus";
+        } else if (nilai >= 65) {
+            huruf = "BC";
+            keterangan = "Lulus";
+        } else if (nilai >= 60) {
+            huruf = "C";
+            keterangan = "Lulus";
+        } else if (nilai >= 50) {
+            huruf = "D";
+            keterangan = "Tidak Lulus";
+        } else {
+            huruf = "E";
+            keterangan = "Tidak Lulus";
+        }
+
+        document.write("Nilai Anda : " + nilai + "<br/>");
+        document.write("Huruf : " + huruf + "<br/>");
+        document.write("Keterangan : " + keterangan);
+    </script>
+</body>
+</html>
